@@ -22,6 +22,9 @@ void main() {
 
   // Завдання 8: Цикли for
   task8();
+
+  // Завдання 9: Цикл while
+  task9();
 }
 
 // Завдання 1: Математичні оператори
@@ -162,7 +165,7 @@ void task6() {
 // 3) Якщо день не від 1 до 7 — вивести “Невірний номер дня”
 // 4) Додатково: для вихідних (6, 7) вивести “Вихідний день 🎉”
 void task7() {
-  int dayNumber = 7;
+  int dayNumber = 6;
 
   switch (dayNumber) {
     case 1:
@@ -211,6 +214,37 @@ void task8() {
   }
 
   print('Sum: $sum');
+
+  print('\n');
+}
+
+// Завдання 9: Цикл while
+// 1) Почніть із числа 10
+// 2) Виводьте числа, зменшуючи їх на 1, поки не досягнете 0
+// 3) Якщо число парне — вивести “Парне число: …”, якщо непарне — “Непарне число: …”
+void task9() {
+  int counter = 10;
+
+  while (counter < 15) {
+    print('Number: ${counter}');
+    counter++;
+  }
+
+  print('\n');
+
+  do {
+    print('Number: ${counter}');
+    counter--;
+  } while (counter >= 0);
+
+  print('\n');
+
+  counter = 1;
+
+  do {
+    print((counter % 2 == 0 ? 'Парне' : 'Непарне') + ' число: $counter');
+    counter++;
+  } while (counter <= 10);
 
   print('\n');
 }
