@@ -1,6 +1,9 @@
 void main() {
   // Завдання 1: Математичні оператори
   task1();
+
+  // Завдання 2: Оператори порівняння
+  task2();
 }
 
 // Завдання 1: Математичні оператори
@@ -27,5 +30,21 @@ void task1() {
   print('Area of a ${widthRectangle}x${heightRectangle} rectangle: ${areaRectangle}');
   print('Perimeter of a ${widthRectangle}x${heightRectangle} rectangle: ${perimeterRectangle}');
   print('Number of ${widthSquare}x${heightSquare} squares in a ${widthRectangle}x${heightRectangle} rectangle: ${numberSquares}');
+  print('\n');
+}
+
+// Завдання 2: Оператори порівняння
+// 1) Створіть змінну number
+// 2) Перевірте:
+//     Чи більше число за 50
+//     Чи менше число за 100
+//     Чи ділиться число на 5 без залишку
+// 3) Виведіть всі результати
+void task2() {
+  int number = 105;
+
+  print('${number} > 50: ${number > 50}');
+  print('${number} < 100: ${number < 100}');
+  print('${number} % 5 == 0: ${number % 5 == 0}');
   print('\n');
 }
