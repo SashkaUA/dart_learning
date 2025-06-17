@@ -4,6 +4,9 @@ void main() {
 
   // Завдання 2: Оператори порівняння
   task2();
+
+  // Завдання 3: Логічні оператори
+  task3();
 }
 
 // Завдання 1: Математичні оператори
@@ -46,5 +49,23 @@ void task2() {
   print('${number} > 50: ${number > 50}');
   print('${number} < 100: ${number < 100}');
   print('${number} % 5 == 0: ${number % 5 == 0}');
+  print('\n');
+}
+
+// Завдання 3: Логічні оператори
+// 1) Створіть змінні hasMoney і isStoreOpen (типу bool)
+// 2) Перевірте:
+//     Чи можна зробити покупку (якщо є гроші і магазин відкритий)
+//     Чи потрібно почекати (якщо магазин закритий або немає грошей)
+// 3) Використайте оператори &&, ||, !
+void task3() {
+  bool hasMoney = false;
+  bool isStoreOpen = false;
+
+  bool isBuy = hasMoney && isStoreOpen;
+  bool isWait = !hasMoney || !isStoreOpen;
+
+  print('You can make a purchase: $isBuy');
+  print('You have to wait: $isWait');
   print('\n');
 }
