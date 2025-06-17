@@ -19,6 +19,9 @@ void main() {
 
   // Завдання 7: Конструкція switch statement
   task7();
+
+  // Завдання 8: Цикли for
+  task8();
 }
 
 // Завдання 1: Математичні оператори
@@ -178,6 +181,36 @@ void task7() {
     default:
       print('Невірний номер дня');
   };
+
+  print('\n');
+}
+
+// Завдання 8: Цикли for
+// 1) Виведіть всі числа від 1 до 10
+// 2) Виведіть тільки парні числа
+// 3) Обчисліть суму чисел від 1 до 10
+void task8() {
+  print('Output all numbers from 1 to 10:');
+
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
+
+  print('\nOutput only even numbers:');
+
+  for (int i = 2; i <= 10; i += 2) {
+    print(i);
+  }
+
+  print('\nCalculate the sum of numbers between 1 and 10:');
+
+  int sum = 0;
+
+  for (int i = 1; i <= 10; i++) {
+    sum += i;
+  }
+
+  print('Sum: $sum');
 
   print('\n');
 }
